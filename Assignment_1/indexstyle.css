@@ -1,91 +1,114 @@
-header {
-  text-align: center;
-  background: #9593a0;
-  padding: 0%;
-  border: none;
-}
+@charset "UTF-8";
 
-nav {
-  overflow: hidden;
-  background-color: #9593a0;
-  padding: 10px 10px;
-  text-align: center;
+html,
+body,
+div {
   margin:0;
+  padding:0;
   border:0;
 }
 
-nav a {
-  margin-left: 15px;
-  margin-right: 15px;
-  color: rgb(36, 47, 243);
-  text-align: center;
-  text-decoration: underline;
-  border: none;
-}
-
-nav a:hover {
-  color: rgb(25, 251, 5);
-}
-
-main {
-  background-color: #9593a0;
+html,
+body {
   position: relative;
-  padding-bottom: 56.25%;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
-iframe{
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-margin:0;
-border:0;
-}
-
-footer {
-  background-color: #9593a0;
-  text-align: center;
-  padding: 10px 10px;
-  text-decoration: underline;
-  margin:0;
-  border:0;
-}
-
-footer a:hover {
-  color: rgb(25, 251, 5);
-}
-
-#runIt {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+.circle {
   position: absolute;
-  left : 810px;
-  top : 800px;
-  color: rgb(36, 47, 243);
-  background-color: rgb(25, 251, 5);
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 80;
-  font-size: 16px;
-  overflow: scroll;
-  padding: 8px 8px;
-  cursor: zoom-in;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #9593a0; ;
 }
 
-
-body{
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  font-size: 20px;
-  overflow: scroll;
-  padding: 0%;
-  border: none;
+.circle div {
+  position: absolute;
+  top: calc((50% - 10px));
+  left: calc((50% - 10px));
+  width: 20px;
+  height:20px;
+  background: #fff;
+  border-radius: 50%;
 }
 
-.ctr{
-width : 100%;
-height : 100%;
+.circle div:nth-child(1) { animation: anim_01 2s forwards;}
+.circle div:nth-child(2) { animation: move_01 2s 2s 2s 2s; }
+.circle div:nth-child(4) { animation: move_03 2s 2s 2s; }
+.circle div:nth-child(3) { animation: move_02 2s 2s; }
+
+@keyframes anim_01 {
+  0% {   transform: scale(0);}
+  20% {  transform: scale(3);}
+  50% {  transform: scale(1);}
+  90% {  transform: scale(5);}
+  100% { transform: scale(0);}
 }
+
+@keyframes move_01 {
+  0% {   transform: translate(0) scale(0);}
+  20% {  transform: translate(-100px, -100px) scale(1);}
+  40% {  transform: translate(-100px, 100px) scale(1);}
+  60% {  transform: translate(100px, 100px) scale(1);}
+  80% {  transform: translate(100px, -100px) scale(1);}
+  100% { transform: translate(0) scale(1);}
+}
+
+@keyframes move_02 {
+  0% {   transform: translate(0) scale(0);}
+  20% {  transform: translate(-100px, 100px) scale(1);}
+  40% {  transform: translate(100px, 100px) scale(1);}
+  60% {  transform: translate(100px, -100px) scale(1);}
+  80% {  transform: translate(-100px, -100px) scale(1);}
+  100% { transform: translate(0) scale(1);}
+}
+
+@keyframes move_03 {
+  0% {   transform: translate(0px) scale(0);}
+  20% {  transform: translate(100px, 100px) scale(1);}
+  40% {  transform: translate(100px, -100px) scale(1);}
+  60% {  transform: translate(-100px, -100px) scale(1);}
+  80% {  transform: translate(-100px, 100px) scale(1);}
+  100% { transform: translate(0) scale(1);}
+}
+
+@keyframes move_04 {
+  0% {   transform: translate(0px) scale(0);}
+  20% {  transform: translate(100px, -100px) scale(1);}
+  40% {  transform: translate(-100px, -100px) scale(1);}
+  60% {  transform: translate(-100px, 100px) scale(1);}
+  80% {  transform: translate(100px, 100px) scale(1);}
+  100% { transform: translate(0) scale(1);}
+}
+
+.big {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.big div{
+  position: absolute;
+  top: calc((50% - 1500px));
+  left: calc((50% - 1500px));
+  width: 3000px;
+  height: 3000px;
+  border-radius: 50%;
+  transform: scale(0);
+}
+
+.big div:nth-child(1) { background: rgb(1, 13, 255);; animation: big .5s 4s forwards;}
+.big div:nth-child(2) { background: #00ff40;; animation: big .5s 4.5s forwards;}
+.big div:nth-child(3) { background: #ff0101;  animation: big .5s 5s forwards;}
+
+@keyframes big {
+  0% {  transform: scale(0);}
+  100% {transform: scale(1);}
+}
+
 

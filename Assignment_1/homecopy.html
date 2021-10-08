@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link href="homestylecopy.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <a href="home.html">
+      <img src="img/Gust_Logo_2021.png" alt="TAM-3" width="312" height="312">
+    </a>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header> 
+
+  <main>
+    <iframe id="pageFrame" width=80% height=100% src=""></iframe>
+
+  </main>
+
+  <footer>
+    <a href="submit.html">Submit</a>
+    <button id="runIt">Gust!</button>
+  </footer>
+
+</body>
+
+  <script type="text/javascript">
+    var urls = [ "https://www.siddharthgovindan.com/", "https://dashrhl.bandcamp.com/", "https://open.spotify.com/track/2ZiqIsnZoAykSO9AGwLkty?si=2548497a795549ef&nd=1", "https://open.spotify.com/track/7jwNQK0w63XZsUMmv8Q0tm?si=9ef44bf0e6414458&nd=1", "https://reliablecopy.org/", "https://sarasijasubramanian.com/", "https://anishabaid.com/", "http://www.aishaabidhussain.com/", "https://baqerahmadi.wixsite.com/website/portfolio", "https://www.facebook.com/homesweethomeblr/", "https://www.nanditaraman.com/", "https://www.chinarshah.com/", "https://smajali.co.uk/", "http://www.olivetones.com/", "https://www.monabenyamin.com/", "https://www.remansadani.com/", "https://www.essagrayeb.com/", "https://maysalbaik.com/", "http://nadimchoufi.com/", "https://petereramian.com/", "https://stelioskallinikou.com/", "https://thkioppalies.org/", "https://www.matigrey.com/research.html", "https://natalieyiaxi.com/", "http://www.marinaxenofontos.com/", "https://tamiaftab.com/The-Children-of-the-Wildflower", "https://teresacos.com/", "https://www.nathanbeard.org/", "https://www.naomiblacklock.com/", "https://iveywawn.com/", "https://yirrkala.com/", "https://temporaryartreview.com/about/#", "https://ecstaticstatic.com/pages/about/", "https://www.98-b.org/", "http://www.omarivsioseph.com/", "https://www.lenabui.com/", "https://qanat.org/QANAT_CURA", "https://tewabarnosa.com/", "http://tajarrod.org.ly/", "https://danielayohannes.space/truth-from-an-ancient-time", "https://www.localesd.com/", "https://www.delfinafoundation.com/in-residence/moe-satt/", "https://kebakahara.com/", "https://www.serendipityartsvirtual.com/#home/projects", "https://futurelanding.serendipityartsvirtual.com/", "https://cargocollective.com/franciscajimenez/obra/Esta-no-es-una-historia-sobre-China", "https://luissebastiansanabria.com/", "https://www.alarcon-tennen.com/", "https://xn--albail-zwa.xyz/", "https://perpetualpostponement.org/", "http://www.baharnoorizadeh.com/"];
+
+    function randomPage(){
+      var random = Math.floor(Math.random() * urls.length);
+      console.log(urls[random]);
+      document.getElementById("pageFrame").src = urls[random];
+      
+    }
+
+    document.getElementById("runIt").addEventListener("click", randomPage);
+
+    var b = document.querySelector("#runIt");
+    b.addEventListener("click",change);
+
+    function change()
+    {
+    let i =Math.abs(Math.floor(Math.random()*window.innerWidth-55))
+    let j = Math.abs(Math.floor(Math.random()*window.innerHeight-21));
+    console.log('here' , i ,j , b.style.left , b.style.top);
+    b.style.left = i+'px';
+    b.style.top = j + "px";
+
+    setTimeout(function(){
+        window.location.href = 'particles.html';
+    }, 0);
+    
+
+}
+
+  </script>
+
+</html>
