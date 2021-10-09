@@ -16,8 +16,14 @@ Gust is an opportunity to get to know and find out about art and creative practi
 
 Feel free to pass the Gust to who ever you want and share your thoughts and reactions with us!
 
-To explore the capacities and different dynamics of Front End, I explored adding the websites as an inframe of my url, an animation to the beginning, making the button that loads next website alter position randomly when clicked, and finally an animation page during the loading of the websites.
+To explore the capacities and different dynamics of Front End, I explored adding the websites as an inframe of my url, an animation to the beginning, making the button that loads next website alter position randomly when clicked, different pages that ask for content to be send by the user -a Contact and Submit page- and finally an animation page during the loading of the websites.
 
 This last one wasn't finished when the deadline arrived. I designed an Exquisite Corps from the possibilities I explored. This file is in the Assignment_1 folder under homecopy.html. 
 
 I will definitely pursue this project in the future since it is of utmost interest to me. 
+
+-----
+This link is to the data base I am building to feed the website:
+https://miro.com/welcomeonboard/VGw0VHlKbFVDczJ6QWRFVTVSbkl1cnBRUDBMdFpldlNSRERjRGw5U3U5NHFyWGM3QXdjTnZCaldBZ1o2aXF1eHwzMDc0NDU3MzY0MDI3OTAwODU2?invite_link_id=982373486617
+
+This Link is to the Diagrams:
